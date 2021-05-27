@@ -1,0 +1,77 @@
+model
+
+User:{
+    id,
+    userName, 
+    password,
+    name,
+    profileImage, 
+    friendList,
+    email,
+    user[] friendList:
+    post[] post,
+    user[] friendRequest,
+    isMyfeiend,
+
+    static login(username, password){
+       //select database by  using username and password
+    }
+    unfriend( User user);
+    ChangePassword(oldPass , newPass, confirmPass)
+    static register()
+    static login()
+    deleteUser()
+    addFriend( )
+    deleteFriend( )
+    acceptRequest( )
+    denyRequest( )
+    changePassword( )
+    getFriendList( )
+    logOut( )
+
+}
+UserManager{
+    static login(username, password)
+}
+
+Post{ 
+    id,
+    userId:[name , ] 
+    user:[] profilePicture
+    timePost, getDate()
+    comment, create()
+    postText, create()
+    postImage,
+
+
+    static createPost(text)
+    comment(User user, string commentText)
+    static post( )
+    editPost( )  
+    deletePost( )
+    addComment( )
+    editComment( )
+    deleteComment( )
+
+}
+
+
+
+
+
+MODEL 
+ 
+
+
+VIEW
+
+
+
+CONTROLLER
+
+
+
+
+
+
+
